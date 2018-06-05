@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimateObject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eA-hN-RR8">
+                                <rect key="frame" x="121" y="553" width="133" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Ht-aA-vge"/>
+                                    <constraint firstAttribute="width" constant="133" id="tns-Jq-Ua6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Animate Color">
+                                    <color key="titleColor" red="0.58431372550000005" green="0.33333333329999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animate1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCk-Qh-7C7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DE-9s-iiG">
+                                <rect key="frame" x="108" y="473" width="158" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2a0-Gd-TtE"/>
+                                    <constraint firstAttribute="width" constant="158" id="qH4-z3-xFV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Transform Animate">
+                                    <color key="titleColor" red="0.58431372550000005" green="0.33333333329999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="transformAnimateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbz-ty-gpb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy1-Js-rda">
+                                <rect key="frame" x="121" y="591" width="133" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KlC-17-17i"/>
+                                    <constraint firstAttribute="width" constant="133" id="sZh-xs-wKL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Animate Frame">
+                                    <color key="titleColor" red="0.58431372550000005" green="0.33333333329999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animate2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ww-Wm-Q2m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5a-sm-Wny">
+                                <rect key="frame" x="121" y="629" width="133" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="PkE-EG-ehn"/>
+                                    <constraint firstAttribute="height" constant="30" id="dN6-YO-UJI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Animate Origin">
+                                    <color key="titleColor" red="0.58431372550000005" green="0.33333333329999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animate3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDH-mR-FON"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LmJ-sP-Ixp">
+                                <rect key="frame" x="67" y="74" width="240" height="154"/>
+                                <color key="backgroundColor" red="0.99694353339999997" green="0.73801403389999998" blue="0.80402562150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5CS-de-4Rg"/>
+                                    <constraint firstAttribute="height" constant="154" id="bw2-OY-SCa"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cst-BF-POX">
+                                <rect key="frame" x="67" y="511" width="240" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="f0L-lw-FJu"/>
+                                    <constraint firstAttribute="height" constant="39" id="gFp-jM-Eim"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Animate Coctail &amp; Repeat">
+                                    <color key="titleColor" red="0.58431372550000005" green="0.33333333329999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateRepeatTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCc-Mq-X4L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LmJ-sP-Ixp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Id-xp-4G2"/>
+                            <constraint firstItem="b5a-sm-Wny" firstAttribute="top" secondItem="iy1-Js-rda" secondAttribute="bottom" constant="8" id="1Xm-MP-kzZ"/>
+                            <constraint firstItem="0DE-9s-iiG" firstAttribute="centerX" secondItem="LmJ-sP-Ixp" secondAttribute="centerX" id="4A6-2K-eYD"/>
+                            <constraint firstItem="LmJ-sP-Ixp" firstAttribute="centerX" secondItem="2eA-hN-RR8" secondAttribute="centerX" id="KcH-JJ-HbV"/>
+                            <constraint firstItem="LmJ-sP-Ixp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="Q5m-cD-y5i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5a-sm-Wny" secondAttribute="bottom" constant="8" id="Zy3-OT-gJa"/>
+                            <constraint firstItem="2eA-hN-RR8" firstAttribute="centerX" secondItem="b5a-sm-Wny" secondAttribute="centerX" id="ay1-2P-KGM"/>
+                            <constraint firstItem="iy1-Js-rda" firstAttribute="top" secondItem="2eA-hN-RR8" secondAttribute="bottom" constant="8" id="bTc-X2-hme"/>
+                            <constraint firstItem="2eA-hN-RR8" firstAttribute="top" secondItem="cst-BF-POX" secondAttribute="bottom" constant="3" id="bWr-bG-mFT"/>
+                            <constraint firstItem="cst-BF-POX" firstAttribute="centerX" secondItem="LmJ-sP-Ixp" secondAttribute="centerX" id="dqj-fV-xnL"/>
+                            <constraint firstItem="cst-BF-POX" firstAttribute="top" secondItem="0DE-9s-iiG" secondAttribute="bottom" constant="8" id="fop-Uc-3Im"/>
+                            <constraint firstItem="2eA-hN-RR8" firstAttribute="centerX" secondItem="iy1-Js-rda" secondAttribute="centerX" id="vuJ-Wm-99z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewSample" destination="LmJ-sP-Ixp" id="c6E-gE-tAI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
